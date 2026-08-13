@@ -10,7 +10,7 @@ import industrial3 from "../assets/images/industrialvist-3.jpg";
 import industrial4 from "../assets/images/industrialvist-4.jpg";
 import industrial5 from "../assets/images/industrialvist-5.jpg";
 import industrial6 from "../assets/images/industrialvist-6.jpg";
-import industrial7 from "../assets/images/industrialvist-7.jpg";
+import industrial7 from "../assets/images/industrialvist-7.jpg";  
 
 import Workshop1 from "../assets/images/Workshop-1.jpg";
 import Workshop2 from "../assets/images/Workshop-2.jpg";
@@ -37,8 +37,14 @@ import Inaugu6 from "../assets/images/Inaugu-6.jpg";
 import Inaugu7 from "../assets/images/Inaugu-7.jpg";
 import Inaugu8 from "../assets/images/Inaugu-8.jpg";
 
+import birthday1 from "../assets/images/birthday-1.jpg";
+import birthday2 from "../assets/images/birthday-2.jpg";
+
 import onam1 from "../assets/images/onam-1.jpg";
-import onam2 from "../assets/images/onam-1.jpg";
+import onam2 from "../assets/images/onam-2.jpg";
+
+import pongal1 from "../assets/images/pongal-1.jpg";
+import pongal2 from "../assets/images/pongal-2.jpg";
 
 import {
   FaTimes,
@@ -107,12 +113,10 @@ function Gallery() {
 
     {
       title: "Birthday Celebration",
-      cover: placeholder,
+      cover: birthday2,
       photos: [
-        placeholder,
-        placeholder,
-        placeholder,
-        placeholder,
+        birthday1,
+        birthday2,
       ],
     },
 
@@ -142,13 +146,10 @@ function Gallery() {
 
     {
       title: "Pongal",
-      cover: placeholder,
+      cover: pongal1,
       photos: [
-        placeholder,
-        placeholder,
-        placeholder,
-        placeholder,
-        placeholder,
+        pongal1,
+        pongal2,
       ],
     },
 
