@@ -1,0 +1,792 @@
+/* =========================================
+   STUDENTS SECTION
+========================================= */
+
+.students {
+  padding: 110px 7%;
+  background: linear-gradient(180deg, #0a0f1f, #111827);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.students-header {
+  text-align: center;
+  max-width: 950px;
+  margin: 0 auto 70px;
+}
+
+.students-header h1 {
+  font-size: 3.2rem;
+  color: #00d9ff;
+  margin-bottom: 20px;
+
+  text-shadow:
+    0 0 10px rgba(0, 217, 255, 0.4),
+    0 0 25px rgba(0, 217, 255, 0.2);
+}
+
+.students-header p {
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: #d1d5db;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.student-card {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.35);
+
+  transition:
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.student-card:hover {
+  border-color: rgba(0, 217, 255, 0.7);
+
+  box-shadow:
+    0 0 30px rgba(0, 217, 255, 0.25),
+    0 15px 45px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   MAIN IMAGE
+========================================= */
+
+.main-image-wrapper {
+  position: relative;
+
+  width: 100%;
+  height: 320px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  background: #080d18;
+}
+
+.main-image-wrapper img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.4s ease;
+}
+
+
+/* Image zoom */
+
+.main-image-wrapper:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.75);
+}
+
+
+/* =========================================
+   MAIN IMAGE OVERLAY
+========================================= */
+
+.image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  color: #ffffff;
+
+  opacity: 0;
+
+  transition: opacity 0.4s ease;
+}
+
+.main-image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay svg {
+  font-size: 2rem;
+  color: #00d9ff;
+
+  filter:
+    drop-shadow(0 0 10px rgba(0, 217, 255, 0.8));
+}
+
+.image-overlay span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.card-content {
+  padding: 28px;
+}
+
+.card-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 217, 255, 0.12);
+
+  color: #00d9ff;
+
+  border-radius: 50%;
+
+  font-size: 1.8rem;
+
+  margin-bottom: 18px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.student-card:hover .card-icon {
+  background: #00d9ff;
+  color: #07111f;
+
+  transform:
+    rotate(8deg)
+    scale(1.08);
+
+  box-shadow:
+    0 0 20px rgba(0, 217, 255, 0.4);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.card-content h2 {
+  font-size: 1.55rem;
+
+  margin-bottom: 15px;
+
+  color: #ffffff;
+}
+
+.card-content p {
+  color: #cbd5e1;
+
+  font-size: 0.98rem;
+
+  line-height: 1.75;
+
+  margin-bottom: 22px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.card-content button {
+  margin-top: 5px;
+
+  padding: 11px 24px;
+
+  background: transparent;
+
+  border: 2px solid #00d9ff;
+
+  border-radius: 30px;
+
+  color: #00d9ff;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.card-content button:hover {
+  background: #00d9ff;
+
+  color: #07111f;
+
+  box-shadow:
+    0 0 20px rgba(0, 217, 255, 0.5);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   EXPANDED CONTENT
+========================================= */
+
+.expanded-content {
+  margin-top: 28px;
+
+  padding-top: 22px;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.15);
+}
+
+.expanded-content h3 {
+  color: #00d9ff;
+
+  font-size: 1.15rem;
+
+  margin:
+    22px 0 14px;
+}
+
+
+/* =========================================
+   ACTIVITY LIST
+========================================= */
+
+.expanded-content ul {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.expanded-content ul li {
+  position: relative;
+
+  padding-left: 27px;
+
+  margin-bottom: 10px;
+
+  color: #d1d5db;
+
+  line-height: 1.6;
+}
+
+.expanded-content ul li::before {
+  content: "✔";
+
+  position: absolute;
+
+  left: 0;
+
+  color: #00d9ff;
+
+  font-weight: bold;
+}
+
+
+/* =========================================
+   GALLERY
+========================================= */
+
+.gallery {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+
+  margin-top: 15px;
+}
+
+
+/* =========================================
+   GALLERY ITEM
+========================================= */
+
+.gallery-item {
+  position: relative;
+
+  height: 140px;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.12);
+
+  background: #080d18;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.4s ease;
+}
+
+
+/* Gallery hover */
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+
+  border-color: #00d9ff;
+
+  box-shadow:
+    0 0 18px rgba(0, 217, 255, 0.3);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+
+  filter: brightness(0.7);
+}
+
+
+/* =========================================
+   GALLERY OVERLAY
+========================================= */
+
+.gallery-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay svg {
+  color: #00d9ff;
+
+  font-size: 1.7rem;
+
+  filter:
+    drop-shadow(0 0 8px rgba(0, 217, 255, 0.8));
+}
+
+
+/* =========================================
+   LIGHTBOX
+========================================= */
+
+.lightbox {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  background:
+    rgba(0, 0, 0, 0.92);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+}
+
+
+/* =========================================
+   LIGHTBOX IMAGE
+========================================= */
+
+.lightbox-image {
+  max-width: 88vw;
+
+  max-height: 82vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 0 40px rgba(0, 217, 255, 0.25);
+
+  user-select: none;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.lightbox-close {
+  position: absolute;
+
+  top: 25px;
+  right: 30px;
+
+  width: 48px;
+  height: 48px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.1);
+
+  color: #ffffff;
+
+  font-size: 1.4rem;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.lightbox-close:hover {
+  background: #00d9ff;
+
+  color: #07111f;
+
+  transform: rotate(90deg);
+}
+
+
+/* =========================================
+   PREVIOUS / NEXT
+========================================= */
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 52px;
+  height: 52px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.1);
+
+  color: #ffffff;
+
+  font-size: 1.4rem;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.lightbox-prev {
+  left: 30px;
+}
+
+.lightbox-next {
+  right: 30px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: #00d9ff;
+
+  color: #07111f;
+
+  transform:
+    translateY(-50%)
+    scale(1.1);
+}
+
+
+/* =========================================
+   IMAGE COUNTER
+========================================= */
+
+.lightbox-counter {
+  position: absolute;
+
+  bottom: 25px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  padding: 8px 18px;
+
+  border-radius: 20px;
+
+  background:
+    rgba(255, 255, 255, 0.1);
+
+  color: #ffffff;
+
+  font-size: 0.9rem;
+
+  backdrop-filter: blur(10px);
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .students {
+    padding: 90px 6%;
+  }
+
+  .students-header h1 {
+    font-size: 2.7rem;
+  }
+
+  .main-image-wrapper {
+    height: 290px;
+  }
+
+  .gallery-item {
+    height: 130px;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .students {
+    padding: 75px 5%;
+  }
+
+  .students-header {
+    margin-bottom: 50px;
+  }
+
+  .students-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .students-header p {
+    font-size: 1rem;
+  }
+
+  .students-grid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .main-image-wrapper {
+    height: 270px;
+  }
+
+  .card-content {
+    padding: 23px;
+  }
+
+  .gallery-item {
+    height: 120px;
+  }
+
+  .lightbox {
+    padding: 20px;
+  }
+
+  .lightbox-image {
+    max-width: 92vw;
+    max-height: 75vh;
+  }
+
+  .lightbox-prev {
+    left: 12px;
+  }
+
+  .lightbox-next {
+    right: 12px;
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    width: 44px;
+    height: 44px;
+
+    font-size: 1.1rem;
+  }
+
+  .lightbox-close {
+    top: 15px;
+    right: 15px;
+
+    width: 42px;
+    height: 42px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .students {
+    padding: 60px 4%;
+  }
+
+  .students-header h1 {
+    font-size: 1.9rem;
+  }
+
+  .students-header p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .main-image-wrapper {
+    height: 230px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .card-content p {
+    font-size: 0.92rem;
+  }
+
+  .card-content button {
+    width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .gallery-item {
+    height: 105px;
+  }
+
+  .lightbox-image {
+    max-width: 94vw;
+    max-height: 70vh;
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    width: 38px;
+    height: 38px;
+
+    font-size: 0.9rem;
+  }
+
+  .lightbox-prev {
+    left: 8px;
+  }
+
+  .lightbox-next {
+    right: 8px;
+  }
+}

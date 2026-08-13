@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+    isolation:isolate;
+
+    padding:100px 20px;
+}
+
+/* =========================
+   BACKGROUND VIDEO
+========================= */
+
+.hero-video{
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-2;
+
+    transform:scale(1.1);
+
+    animation:zoomVideo 20s ease-in-out infinite alternate;
+}
+
+/* =========================
+   OVERLAY
+========================= */
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        rgba(0,0,0,.60),
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.75)
+    );
+
+    z-index:-1;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.hero-content{
+    position:relative;
+    z-index:5;
+
+    width:100%;
+    max-width:1000px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    gap:20px;
+
+    padding:20px;
+}
+
+/* =========================
+   SPARTAN BACKGROUND LOGO
+========================= */
+
+.hero-bg-logo{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    width:700px;
+    height:700px;
+    max-width:90vw;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    pointer-events:none;
+    z-index:-1;
+}
+
+.spartan-logo{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+
+    opacity:0.28;
+
+    filter:
+        brightness(2.5)
+        saturate(1.4)
+        drop-shadow(0 0 20px #00d9ff)
+        drop-shadow(0 0 50px #00aaff)
+        drop-shadow(0 0 90px #0066ff);
+
+    animation:spartanFloat 8s ease-in-out infinite;
+}
+/* =========================
+   TITLE
+========================= */
+
+.hero h1{
+    margin:0;
+
+    font-family:"Orbitron",sans-serif;
+    font-size:6rem;
+    font-weight:900;
+
+    letter-spacing:10px;
+    line-height:1.05;
+
+    color:#fff;
+
+    text-transform:uppercase;
+
+    text-shadow:
+        0 0 10px #00e5ff,
+        0 0 20px #00b7ff,
+        0 0 40px #006eff;
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.hero h2{
+    margin:0;
+
+    font-family:"Poppins",sans-serif;
+    font-size:1.8rem;
+    font-weight:500;
+
+    color:#dbeafe;
+
+    letter-spacing:3px;
+    line-height:1.5;
+}
+
+/* =========================
+   TAGLINE
+========================= */
+
+.hero p{
+    margin:5px 0 10px;
+
+    font-family:"Poppins",sans-serif;
+    font-size:1.25rem;
+    font-weight:400;
+
+    color:#fff;
+
+    line-height:1.8;
+
+    text-shadow:0 0 8px rgba(0,229,255,.4);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:25px;
+
+    margin-top:15px;
+
+    flex-wrap:wrap;
+}
+
+.btn{
+    min-width:240px;
+
+    padding:17px 40px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-family:"Poppins",sans-serif;
+    font-size:1rem;
+    font-weight:600;
+
+    text-align:center;
+
+    transition:.35s ease;
+}
+
+.primary{
+    background:#00a8ff;
+    color:#fff;
+
+    box-shadow:0 0 20px rgba(0,168,255,.6);
+}
+
+.primary:hover{
+    background:#0084ff;
+    transform:translateY(-5px);
+
+    box-shadow:0 0 35px rgba(0,229,255,.9);
+}
+
+.secondary{
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.4);
+
+    backdrop-filter:blur(10px);
+}
+
+.secondary:hover{
+    background:#00e5ff;
+
+    color:#000;
+
+    transform:translateY(-5px);
+}
+
+/* =========================
+   SCROLL DOWN
+========================= */
+
+.scroll-down{
+    margin-top:70px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:10px;
+}
+
+.mouse{
+    width:30px;
+    height:50px;
+
+    border:2px solid #fff;
+
+    border-radius:20px;
+
+    position:relative;
+}
+
+.mouse::before{
+    content:"";
+
+    position:absolute;
+
+    width:5px;
+    height:10px;
+
+    background:#fff;
+
+    border-radius:10px;
+
+    top:8px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    animation:scroll 2s infinite;
+}
+
+.scroll-down span{
+    color:#d1d5db;
+
+    letter-spacing:4px;
+
+    font-size:.9rem;
+}
+
+.arrow{
+    font-size:2rem;
+
+    animation:bounce 2s infinite;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes zoomVideo{
+    from{
+        transform:scale(1.1);
+    }
+    to{
+        transform:scale(1.18);
+    }
+}
+
+@keyframes spartanFloat{
+    0%,100%{
+        transform:translateY(0) scale(1);
+    }
+
+    50%{
+        transform:translateY(-12px) scale(1.03);
+    }
+}
+@keyframes scroll{
+    0%{
+        opacity:0;
+        transform:translate(-50%,0);
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+        transform:translate(-50%,15px);
+    }
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(8px);
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:992px){
+
+.hero h1{
+    font-size:4.5rem;
+    letter-spacing:6px;
+}
+
+.hero h2{
+    font-size:1.4rem;
+}
+
+.hero p{
+    font-size:1.1rem;
+}
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.hero{
+    padding:120px 20px 80px;
+}
+
+.hero-content{
+    gap:15px;
+}
+
+.hero-bg-logo{
+    width:420px;
+    height:420px;
+}
+
+.hero h1{
+    font-size:3rem;
+    letter-spacing:4px;
+}
+
+.hero h2{
+    font-size:1.1rem;
+    letter-spacing:1px;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    gap:18px;
+}
+
+.btn{
+    width:260px;
+}
+
+.scroll-down{
+    margin-top:50px;
+}
+
+}
