@@ -1,6 +1,6 @@
 import "../styles/Hero.css";
 import backgroundVideo from "../assets/video/background.mp4";
-import spartan from "../assets/images/spartan.png";
+import spartan from "../assets/images/Spartan.png";
 import { motion } from "framer-motion";
 
 function Hero() {
