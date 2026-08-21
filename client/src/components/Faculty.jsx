@@ -34,7 +34,7 @@ function Faculty() {
 
           <div className="faculty-info">
 
-            <h3>Dr. R. Sujitha</h3>
+            <h3> R. Sujitha</h3>
 
             <p className="designation">
               Head of the Department
@@ -77,14 +77,14 @@ function Faculty() {
 
             <div className="faculty-info">
 
-              <h3>Geethajali</h3>
+              <h3>Geethanjali</h3>
 
               <p className="designation">
                 Assistant Professor
               </p>
 
               <p className="experience">
-                Experience: 5 Years
+                Experience: Years
               </p>
 
             </div>
@@ -110,7 +110,7 @@ function Faculty() {
               </p>
 
               <p className="experience">
-                Experience: 2 Years
+                Experience: Years
               </p>
 
             </div>
@@ -136,7 +136,7 @@ function Faculty() {
               </p>
 
               <p className="experience">
-                Experience: 1 Year
+                Experience: Years
               </p>
 
             </div>
@@ -162,7 +162,7 @@ function Faculty() {
               </p>
 
               <p className="experience">
-                Experience: 3 Years
+                Experience: Years
               </p>
 
             </div>
@@ -188,41 +188,14 @@ function Faculty() {
               </p>
 
               <p className="experience">
-                Experience: 1 Year
+                Experience: Years
               </p>
 
             </div>
 
           </div>
-
 
           {/* STAFF 6 */}
-
-          <div className="faculty-card">
-
-            <div className="image-placeholder">
-              👤
-              <span>Staff Photo</span>
-            </div>
-
-            <div className="faculty-info">
-
-              <h3>Yogeswari</h3>
-
-              <p className="designation">
-                Assistant Professor
-              </p>
-
-              <p className="experience">
-                Experience: 2 Years
-              </p>
-
-            </div>
-
-          </div>
-
-
-          {/* STAFF 7 */}
 
           <div className="faculty-card">
 
@@ -240,7 +213,32 @@ function Faculty() {
               </p>
 
               <p className="experience">
-                Experience: 3 Years
+                Experience: Years
+              </p>
+
+            </div>
+
+          </div>
+
+          {/* STAFF 7 */}
+
+          <div className="faculty-card">
+
+            <div className="image-placeholder">
+              👤
+              <span>Staff Photo</span>
+            </div>
+
+            <div className="faculty-info">
+
+              <h3>Yogeswari</h3>
+
+              <p className="designation">
+                Assistant Professor
+              </p>
+
+              <p className="experience">
+                Experience: Years
               </p>
 
             </div>

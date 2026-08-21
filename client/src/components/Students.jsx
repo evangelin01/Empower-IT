@@ -7,11 +7,24 @@ import industrial1 from "../assets/images/industrial-1.jpg";
 import industrial2 from "../assets/images/industrial-2.jpg";
 import industrial3 from "../assets/images/industrial-3.jpg";
 import industrial4 from "../assets/images/industrial-4.jpg";
+import industrial5 from "../assets/images/industrial-5.jpg";
 
 import Skilldep1 from "../assets/images/Skilldep-1.jpg";
 import Skilldep2 from "../assets/images/Skilldep-2.jpg";
 import Skilldep3 from "../assets/images/Skilldep-3.jpg";
 import Skilldep4 from "../assets/images/Skilldep-4.jpg";
+
+import techact1 from "../assets/images/techact-1.jpg";
+import techact2 from "../assets/images/techact-2.jpg";
+
+import innov1 from "../assets/images/innov-1.jpg";
+import innov2 from "../assets/images/innov-2.jpg";
+import innov3 from "../assets/images/innov-3.jpg";
+
+import cocurri1 from "../assets/images/cocurri-1.jpg";
+import cocurri2 from "../assets/images/cocurri-2.jpg";
+import cocurri3 from "../assets/images/cocurri-3.jpg";
+import cocurri4 from "../assets/images/cocurri-4.jpg";
 
 import { motion } from "framer-motion";
 
@@ -32,7 +45,7 @@ const activities = [
   {
     title: "Technical Activities",
     icon: <FaLaptopCode />,
-    image: placeholder,
+    image: techact1,
 
     description:
       "Students actively participate in technical events to enhance their practical knowledge and problem-solving skills.",
@@ -46,7 +59,10 @@ const activities = [
       "Treasure Hunt",
     ],
 
-    gallery: [placeholder, placeholder, placeholder],
+    gallery: [
+      techact1,
+      techact2,
+    ],
 
     highlights: [
       "National Level Symposium",
@@ -59,20 +75,24 @@ const activities = [
   {
     title: "Innovation & Entrepreneurship",
     icon: <FaLightbulb />,
-    image: placeholder,
+    image: innov1,
 
     description:
       "The department encourages innovative thinking through startup and entrepreneurship activities.",
 
     details: [
       "Startup Awareness Programme",
-      "Patent to Product",
+      "Niral Thiruvizha 3.0",
       "AICTE YUKTI",
       "Ideathons",
       "Entrepreneurship Development",
     ],
 
-    gallery: [placeholder, placeholder, placeholder],
+    gallery: [
+      innov1,
+      innov2,
+      innov3,
+    ],
 
     highlights: [
       "Innovation Culture",
@@ -135,6 +155,7 @@ const activities = [
     industrial2,
     industrial3,
     industrial4,
+    industrial5,
   ],
 
   highlights: [
@@ -148,7 +169,7 @@ const activities = [
   {
     title: "Co-Curricular Activities",
     icon: <FaUsers />,
-    image: placeholder,
+    image: cocurri4,
 
     description:
       "The department organizes cultural and social activities that encourage creativity and teamwork.",
@@ -162,7 +183,12 @@ const activities = [
       "Blood Donation Camp",
     ],
 
-    gallery: [placeholder, placeholder, placeholder],
+    gallery: [
+      cocurri1,
+      cocurri2,
+      cocurri3,
+      cocurri4,
+    ],
 
     highlights: [
       "Leadership",

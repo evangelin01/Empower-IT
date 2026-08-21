@@ -4,13 +4,52 @@ import { motion } from "framer-motion";
 
 import placeholder from "../assets/images/placeholder.jpg";
 
+import culturals1 from "../assets/images/culturals-1.jpg";
+import culturals2 from "../assets/images/culturals-2.jpg";
+import culturals3 from "../assets/images/culturals-3.jpg";
+import culturals4 from "../assets/images/culturals-4.jpg";
+import culturals5 from "../assets/images/culturals-5.jpg";
+import culturals6 from "../assets/images/culturals-6.jpg";
+import culturals7 from "../assets/images/culturals-7.jpg";
+import culturals8 from "../assets/images/culturals-8.jpg";
+
+import skillcor1 from "../assets/images/skillcor-1.jpg";
+import skillcor2 from "../assets/images/skillcor-2.jpg";
+import skillcor3 from "../assets/images/skillcor-3.jpg";
+import skillcor4 from "../assets/images/skillcor-4.jpg";
+import skillcor5 from "../assets/images/skillcor-5.jpg";
+import skillcor6 from "../assets/images/skillcor-6.jpg";
+import skillcor7 from "../assets/images/skillcor-7.jpg";
+
 import industrial1 from "../assets/images/industrialvist-1.jpg";
 import industrial2 from "../assets/images/industrialvist-2.jpg";
 import industrial3 from "../assets/images/industrialvist-3.jpg";
 import industrial4 from "../assets/images/industrialvist-4.jpg";
 import industrial5 from "../assets/images/industrialvist-5.jpg";
 import industrial6 from "../assets/images/industrialvist-6.jpg";
-import industrial7 from "../assets/images/industrialvist-7.jpg";  
+import industrial7 from "../assets/images/industrialvist-7.jpg";
+
+
+import birthday1 from "../assets/images/birthday-1.jpg";
+import birthday2 from "../assets/images/birthday-2.jpg";
+
+import Inaugu1 from "../assets/images/Inaugu-1.jpg";
+import Inaugu2 from "../assets/images/Inaugu-2.jpg";
+import Inaugu3 from "../assets/images/Inaugu-3.jpg";
+import Inaugu5 from "../assets/images/Inaugu-5.jpg";
+import Inaugu6 from "../assets/images/Inaugu-6.jpg";
+import Inaugu7 from "../assets/images/Inaugu-7.jpg";
+import Inaugu8 from "../assets/images/Inaugu-8.jpg";
+
+import onam1 from "../assets/images/onam-1.jpg";
+import onam2 from "../assets/images/onam-2.jpg";
+import onam3 from "../assets/images/onam-3.jpg";
+
+import pongal1 from "../assets/images/pongal-1.jpg";
+import pongal2 from "../assets/images/pongal-2.jpg";
+import pongal3 from "../assets/images/pongal-3.jpg";
+import pongal4 from "../assets/images/pongal-4.jpg";
+import pongal5 from "../assets/images/pongal-5.jpg";
 
 import Workshop1 from "../assets/images/Workshop-1.jpg";
 import Workshop2 from "../assets/images/Workshop-2.jpg";
@@ -21,30 +60,17 @@ import Workshop6 from "../assets/images/Workshop-6.jpg";
 import Workshop7 from "../assets/images/Workshop-7.jpg";
 
 
-import skillcor1 from "../assets/images/skillcor-1.jpg";
-import skillcor2 from "../assets/images/skillcor-2.jpg";
-import skillcor3 from "../assets/images/skillcor-3.jpg";
-import skillcor4 from "../assets/images/skillcor-4.jpg";
-import skillcor5 from "../assets/images/skillcor-5.jpg";
-import skillcor6 from "../assets/images/skillcor-6.jpg";
+import technique1 from "../assets/images/technique-1.jpg";
+import technique2 from "../assets/images/technique-2.jpg";
+import technique3 from "../assets/images/technique-3.jpg";
+import technique4 from "../assets/images/technique-4.jpg";
+import technique5 from "../assets/images/technique-5.jpg";
+import technique6 from "../assets/images/technique-6.jpg";
+import technique7 from "../assets/images/technique-7.jpg";
+import technique8 from "../assets/images/technique-8.jpg";
+import technique9 from "../assets/images/technique-9.jpg";
 
-import Inaugu1 from "../assets/images/Inaugu-1.jpg";
-import Inaugu2 from "../assets/images/Inaugu-2.jpg";
-import Inaugu3 from "../assets/images/Inaugu-3.jpg";
-import Inaugu4 from "../assets/images/Inaugu-4.jpg";
-import Inaugu5 from "../assets/images/Inaugu-5.jpg";
-import Inaugu6 from "../assets/images/Inaugu-6.jpg";
-import Inaugu7 from "../assets/images/Inaugu-7.jpg";
-import Inaugu8 from "../assets/images/Inaugu-8.jpg";
 
-import birthday1 from "../assets/images/birthday-1.jpg";
-import birthday2 from "../assets/images/birthday-2.jpg";
-
-import onam1 from "../assets/images/onam-1.jpg";
-import onam2 from "../assets/images/onam-2.jpg";
-
-import pongal1 from "../assets/images/pongal-1.jpg";
-import pongal2 from "../assets/images/pongal-2.jpg";
 
 import {
   FaTimes,
@@ -73,14 +99,16 @@ function Gallery() {
   const albums = [
     {
       title: "Culturals",
-      cover: placeholder,
+      cover: culturals3,
       photos: [
-        placeholder,
-        placeholder,
-        placeholder,
-        placeholder,
-        placeholder,
-        placeholder,
+        culturals1,
+        culturals2,
+        culturals3,
+        culturals4,
+        culturals5,
+        culturals6,
+        culturals7,
+        culturals8,
       ],
     },
 
@@ -94,6 +122,7 @@ function Gallery() {
         skillcor4,
         skillcor5,
         skillcor6,
+        skillcor7,
       ],
     },
 
@@ -127,7 +156,6 @@ function Gallery() {
         Inaugu1,
         Inaugu2,
         Inaugu3,
-        Inaugu4,
         Inaugu5,
         Inaugu6,
         Inaugu7,
@@ -141,6 +169,7 @@ function Gallery() {
       photos: [
         onam1,
         onam2,
+        onam3,
       ],
     },
 
@@ -150,6 +179,9 @@ function Gallery() {
       photos: [
         pongal1,
         pongal2,
+        pongal3,
+        pongal4,
+        pongal5,
       ],
     },
 
@@ -169,13 +201,17 @@ function Gallery() {
 
     {
       title: "Technical Events",
-      cover: placeholder,
+      cover: technique1,
       photos: [
-        placeholder,
-        placeholder,
-        placeholder,
-        placeholder,
-        placeholder,
+        technique1,
+        technique2,
+        technique3,
+        technique4,
+        technique5,
+        technique6,
+        technique7,
+        technique8,
+        technique9,
       ],
     },
 
